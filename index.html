@@ -7,24 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Survey</title>
     <link rel="stylesheet" href="app.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="content">
+    <div id="content">
         <h1>Color Survey</h1>
-        <form>
+        <script src="./script.js"></script>
+        <form onsubmit="onSubmit(event)">
             <div>
                 <label>Enter first color</label>
-                <input type="color">
+                <input id="color1" type="color">
             </div>
 
             <div><label>Enter second color</label>
-                <input type="color">
+                <input id="color2" type="color">
             </div>
             <div>
                 <label>Enter third color</label>
-                <input type="color">
+                <input id="color3" type="color">
             </div>
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>
