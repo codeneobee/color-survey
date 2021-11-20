@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "awesome-advice-331910"
+  },
+  "targets": {
+    "awesome-advice-331910": {
+      "hosting": {
+        "colortrains": [
+          "public"
+        ]
+      }
+    }
   }
 }

@@ -71,9 +71,9 @@ function submitForm() {
         taste_thoughts: tasteThoughts,
         feel_thoughts: feelThoughts,
     }).then(() => {
-        document.getElementById("form").innerHTML = `<div>Thanks for participating</div>`
+        document.getElementById("form").innerHTML = `<div class="done-dialog">Thanks for participating</div>`
     }).catch(() => {
-        document.getElementById("form").innerHTML = `<div>Something went wrong. Please try again</div>`
+        document.getElementById("form").innerHTML = `<div class="done-dialog">Something went wrong. Please try again</div>`
     })
 
 }
