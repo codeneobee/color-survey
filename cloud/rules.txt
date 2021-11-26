@@ -28,10 +28,10 @@ service cloud.firestore {
         && request.resource.data.taste_color.matches("#[0-9a-fA-F]{6}")
         && request.resource.data.feel_color.matches("#[0-9a-fA-F]{6}")
         && request.resource.data.see_thoughts.matches(".{0,500}")
-        && request.resource.data.hear_thoughts.matches("#.{0,500}")
-        && request.resource.data.smell_thoughts.matches("#.{0,500}")
-        && request.resource.data.taste_thoughts.matches("#.{0,500}")
-        && request.resource.data.feel_thoughts.matches("#.{0,500}")
+        && request.resource.data.hear_thoughts.matches(".{0,500}")
+        && request.resource.data.smell_thoughts.matches(".{0,500}")
+        && request.resource.data.taste_thoughts.matches(".{0,500}")
+        && request.resource.data.feel_thoughts.matches(".{0,500}")
     }
   }
 }
