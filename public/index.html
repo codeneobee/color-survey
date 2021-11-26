@@ -12,76 +12,88 @@
 
 <body>
     <script type="module" src="./script.js"></script>
-    <div id="content">
+    <div id="container">
         <div class="section">
-            <h1>Traveling with all senses</h1>
+            <h1>Travelling with all senses</h1>
             <hr id="divider">
             <p>
-                Imagine you are sitting in a <b>train compartment</b> on a long journey. What do you <b>percieve</b>?
+                Imagine you are sitting in a <b>train compartment</b> on a long journey. What do you
+                <b>perceive</b>?
             </p>
             <p>Does everyone perceive travelling by train in the same way? We want to investigate this question and
-                allow for comparison of perceptions using <b>colours</b>. They make our <b>feelings</b> visible. To get
-                the broadest insight possible, we've sent this survey to design students from all over Europe.</p>
+                allow for comparison of perceptions using <b>colours</b>. They make our <b>feelings</b> visible. To
+                get
+                the broadest insight possible, we’ve sent this survey to design students from all over Europe.</p>
         </div>
         <div class="section">
-            <p>Instructions: </p>
+            <p><b>Instructions: </b></p>
             <ol>
-                <li>Do not overthink, just follow your <b>intuition</b>.</li>
-                <li>Please help us in making this project even better by sharing this project.</li>
+                <li>Do not overthink, just follow your <b>intuition</b>!</li>
+                <li>For the most precise colour selection, we recommend Google Chrome!</li>
+                <li>Please help us in making this project even better by sharing this project with classmates!</li>
                 <li>This should only take up to 5 minutes of your time!</li>
             </ol>
             <p>Thank you very much for participating! So, let's go!</p>
-            <p>Greetings from HTW Berlin, Tom and Mathilda 🚂✨</p>
+            <p>Greetings from HTW Berlin, Tom and Mathilda 🚃✨</p>
         </div>
         <div id="form">
             <div class="form-item">
-                <label class="display-block">First name</label>
-                <input minlength="1" maxlength="30" id="first-name" type="text"></label>
+                <label class="text-label">First name</label>
+                <input class="small-text-input" minlength="1" maxlength="30" id="first-name" type="text"></label>
             </div>
             <div class="form-item">
-                <label class="display-block">City</label>
-                <input minlength="1" maxlength="30" id="city" type="text"></label>
+                <label class="text-label">City</label>
+                <input class="small-text-input" minlength="1" maxlength="30" id="city" type="text"></label>
             </div>
             <div class="form-item">
-                <label class="display-block">Country</label>
-                <input minlength="1" maxlength="30" id="country" type="text"></label>
+                <label class="text-label">Country</label>
+                <input class="small-text-input" minlength="1" maxlength="30" id="country" type="text"></label>
             </div>
             <div class="form-item">
-                <label class="display-block">What do you see while sitting in a train compartment?</label>
+                <label class="color-label">What do you see while sitting in a train compartment?</label>
                 <div class="input-area">
-                    <input id="see-color" type="color">
-                    <textarea maxlength="500" id="see-thoughts" placeholder="Add some thoughts (optional)"></textarea>
+                    <input class="color-input" id="see-color" type="color">
+                    <textarea class="optional-thoughts-textarea" maxlength="500" id="see-thoughts"
+                        placeholder="Thoughts and explanations (optional)"></textarea>
                 </div>
             </div>
             <div class="form-item">
-                <label class="display-block">What do you hear while sitting in a train compartment?</label>
+                <label class="color-label">What do you hear while sitting in a train compartment?</label>
                 <div class="input-area">
-                    <input id="hear-color" type="color">
-                    <textarea maxlength="500" id="hear-thoughts" placeholder="Add some thoughts (optional)"></textarea>
+                    <input class="color-input" id="hear-color" type="color">
+                    <textarea class="optional-thoughts-textarea" maxlength="500" id="hear-thoughts"
+                        placeholder="Thoughts and explanations (optional)"></textarea>
                 </div>
             </div>
             <div class="form-item">
-                <label class="display-block">What do you smell while sitting in a train compartment?</label>
+                <label class="color-label">What do you smell while sitting in a train compartment?</label>
                 <div class="input-area">
-                    <input id="smell-color" type="color">
-                    <textarea maxlength="500" id="smell-thoughts" placeholder="Add some thoughts (optional)"></textarea>
+                    <input class="color-input" id="smell-color" type="color">
+                    <textarea class="optional-thoughts-textarea" maxlength="500" id="smell-thoughts"
+                        placeholder="Thoughts and explanations (optional)"></textarea>
                 </div>
             </div>
             <div class="form-item">
-                <label class="display-block">What do you taste while sitting in a train compartment?</label>
+                <label class="color-label">What do you taste while sitting in a train compartment?</label>
                 <div class="input-area">
-                    <input id="taste-color" type="color">
-                    <textarea maxlength="500" id="taste-thoughts" placeholder="Add some thoughts (optional)"></textarea>
+                    <input class="color-input" id="taste-color" type="color">
+                    <textarea class="optional-thoughts-textarea" maxlength="500" id="taste-thoughts"
+                        placeholder="Thoughts and explanations (optional)"></textarea>
                 </div>
             </div>
             <div class="form-item">
-                <label class="display-block">What do you feel while sitting in a train compartment?</label>
+                <label class="color-label">What do you feel while sitting in a train compartment?</label>
                 <div class="input-area">
-                    <input id="feel-color" type="color">
-                    <textarea maxlength="500" id="feel-thoughts" placeholder="Add some thoughts (optional)"></textarea>
+                    <input class="color-input" id="feel-color" type="color">
+                    <textarea class="optional-thoughts-textarea" maxlength="500" id="feel-thoughts"
+                        placeholder="Thoughts and explanations (optional)"></textarea>
                 </div>
             </div>
-            <button id="submit-btn">Submit</button>
+            <div class='form-buttons'>
+                <button class="button" id="submit-btn">Submit</button>
+                <button class="button" id="share-btn">Share</button>
+                <div id='link-copied'>Link copied</div>
+            </div>
         </div>
         <p id="contact">Created by Dominik Tews</p>
         <a id="contact-link" href="mailto:dominiktews98@gmail.com">Contact</a>

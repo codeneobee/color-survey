@@ -71,12 +71,39 @@ function submitForm() {
         taste_thoughts: tasteThoughts,
         feel_thoughts: feelThoughts,
     }).then(() => {
-        document.getElementById("form").innerHTML = `<div class="done-dialog">Thanks for participating</div>`
+        document.getElementById("form").innerHTML = `<div class="done-dialog">Thanks for participating!</div>`
     }).catch(() => {
-        document.getElementById("form").innerHTML = `<div class="done-dialog">Something went wrong. Please try again</div>`
+        document.getElementById("form").innerHTML = `<div class="done-dialog">Something went wrong. Please try again.</div>`
     })
 
 }
 
+function share() {
+    if(navigator.share) {
+        navigator.share({
+            title: document.title,
+            url: ""
+        })
+    } else {
+        console.log("Not Share")
+        navigator.clipboard.writeText(document.location.hostname).then(() => {
+            const linkDialog = document.getElementById('link-copied')
+            if (linkDialog) {
+                linkDialog.classList.add('visible')
+                setInterval(() => {
+                    linkDialog.classList.add('fade-out')
+                    setInterval(() => {
+                        linkDialog.classList.remove('visible')        
+                        linkDialog.classList.remove('fade-out')        
+                    }, 1000)
+                }, 5000)
+            }
+        })
+    }
+}
+
 const submitButton = document.getElementById("submit-btn")
 submitButton.onclick = submitForm
+
+const shareButton = document.getElementById("share-btn")
+shareButton.onclick = share
