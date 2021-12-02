@@ -20,15 +20,17 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore()
 function submitForm() {
+    document.getElementById("submit-btn").setAttribute("disabled", true)
+
     const firstName = $('#first-name').val()
     const city = $('#city').val()
     const country = $('#country').val()
-    const seeColor = $('#feel-color').val()
+    const seeColor = $('#see-color').val()
     const hearColor = $('#hear-color').val()
     const smellColor = $('#smell-color').val()
     const tasteColor = $('#taste-color').val()
     const feelColor = $('#feel-color').val()
-    const seeThoughts = $('#feel-thoughts').val()
+    const seeThoughts = $('#see-thoughts').val()
     const hearThoughts = $('#hear-thoughts').val()
     const smellThoughts = $('#smell-thoughts').val()
     const tasteThoughts = $('#taste-thoughts').val()

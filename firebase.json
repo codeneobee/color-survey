@@ -1,6 +1,6 @@
 {
   "firestore": {
-    "rules": "cloud/rules.txt"
+    "rules": "cloud/firestore.rules"
   },
   "hosting": {
     "site": "travellingwithallsenses",

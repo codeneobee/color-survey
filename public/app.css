@@ -162,3 +162,9 @@ body {
     visibility: visible;
     opacity: 0;
 }
+
+.star-disclaimer {
+    font-size: 0.75rem;
+    color: grey;
+    margin-bottom: 0.5rem;
+}

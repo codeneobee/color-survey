@@ -19,9 +19,9 @@ service cloud.firestore {
           "taste_thoughts", 
           "feel_thoughts", ]
         )
-      	&& request.resource.data.first_name.matches("[a-zA-Z0-9]{1,30}")
-      	&& request.resource.data.city.matches("[a-zA-Z0-9]{1,30}")
-      	&& request.resource.data.country.matches("[a-zA-Z0-9]{1,30}")
+      	&& request.resource.data.first_name.matches(".{1,30}")
+      	&& request.resource.data.city.matches(".{1,30}")
+      	&& request.resource.data.country.matches(".{1,30}")
         && request.resource.data.see_color.matches("#[0-9a-fA-F]{6}")
         && request.resource.data.hear_color.matches("#[0-9a-fA-F]{6}")
         && request.resource.data.smell_color.matches("#[0-9a-fA-F]{6}")
